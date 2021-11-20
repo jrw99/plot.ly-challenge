@@ -1,6 +1,7 @@
 // Global to share the filtered sample
 let samples = [];
 
+// Function to filter for desired sample based on otuId
 function getData(otuId) {
     let sample = samples.filter(sample => sample.id === otuId);
     let vals = sample[0].sample_values.slice(0,10).reverse();
@@ -54,7 +55,7 @@ d3.json("data/samples.json")
     // Kick-off by pre-filtering on the first value in the select list and plot it. 
     // Can just get the first value of the names array to accomplish...
     let plotdata = getData(data.names[0]);
-     Plotly.newPlot('bar', plotdata.trace, plotdata.layout);    
+    Plotly.newPlot('bar', plotdata.trace, plotdata.layout);    
 });
 
 
