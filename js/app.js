@@ -53,7 +53,12 @@ function getBubbleData(otuId) {
          }];       
     
      let lyout = {
-        title: `<b>Bubble Chart for Test Subject ID:${sample[0].id}</b>`                      
+        title: `<b>Bubble Chart for Test Subject ID:${sample[0].id}</b>`,    
+        xaxis: {
+            title: {
+              text: 'OTU ID'              
+            }
+          }                 
      };
 
      let data = {
