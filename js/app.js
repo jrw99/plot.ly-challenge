@@ -99,7 +99,7 @@ function getGaugeData(otuId) {
         y: [0],
         marker: {
             size: 20,
-            color:'#850000'
+            color:'#830308'
         },
         hoverinfo: "skip",
         showlegend: false        
@@ -130,7 +130,7 @@ function getGaugeData(otuId) {
     }   
 
     // build the triangle needle
-    let degrees = 180-(20 * demoInfo.wfreq + offset); // 20 degrees for each gauge section (9 in total)
+    let degrees = 180-(20 * demoInfo.wfreq + offset); 
     let radius = .5;
     let radians = degrees * Math.PI / 180;
 
@@ -150,9 +150,9 @@ function getGaugeData(otuId) {
         shapes:[{
             type: 'path',
             path: pth,
-            fillcolor: '#850000',
+            fillcolor: '#830308',
             line: {
-                color: '#850000'
+                color: '#830308'
             }
         }],
         xaxis: {
