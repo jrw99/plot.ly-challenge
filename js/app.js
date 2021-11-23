@@ -47,9 +47,10 @@ function getBubbleData(otuId) {
              text: txt, 
              mode: 'markers',
              marker: {
+                 colorscale: "Earth",
                  size: msize,
                  color: mcolours
-             }
+             }            
          }];       
     
      let lyout = {
